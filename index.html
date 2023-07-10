@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tyhdefu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>tyhdefu</h1>
+  <div class="table">
+    <ul class="portfolio-list">
+      <li class="github-item">
+        <h2>Github</h2>
+        <a href="https://github.com/tyhdefu">
+          <img src="images/github-mark-white.svg" class="github-logo"/>
+        </a>
+        <h3>Personal Projects</h3>
+        <ul class="item-detail">
+          <li><a href="#home-heating">Home Heating - Rust</a></li>
+          <li>SpongeAPI Contributions</li>
+        </ul>
+      </li>
+      <li class="gitlab-item">
+        <h2>Gitlab</h2>
+        <a href="https://gitlab.com/tyhdefu">
+          <img src="images/gitlab-logo-cropped.svg" class="gitlab-logo"/>
+        </a>
+        <h3>MinecraftOnline Contributions</h3>
+        <ul class="item-detail">
+          <li><a href="#craftbook-extra">CraftBook Extra</a></li>
+          <li>PenguinDungeons</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <h1>Programming Languages</h1>
+  <div class="grid-container">
+    <ul class="grid">
+      <li>Java</li>
+      <li>Rust</li>
+      <li>Python</li>
+      <li>C++</li>
+      <li>Unix shell scripting</li>
+      <li>SQL</li>
+    </ul>
+  </div>
+  <h1>Additional Skills</h1>
+  <div class="grid-container">
+    <ul class="grid">
+      <li>IntelliJ IDEA</li>
+      <li>Gradle</li>
+      <li>MySQL / MariaDb</li>
+      <li>Github</li>
+      <li>Gitlab</li>
+      <li>Docker</li>
+      <li>Grafana</li>
+      <li>Kanban</li>
+      <li>Linux System Adminstration</li>
+      <li>CI</li>
+      <li>Documentation</li>
+      <li>Issue Tracking</li>
+      <li>Cross Compilation</li>
+      <li>Code Review</li>
+    </ul>
+  </div>
+  <h1>Projects</h1>
+  <h2 id="home-heating">Home Heating - <a href="https://github.com/tyhdefu/follow-heating-rust">Github</a></h2>
+  <div class="project-detail">
+    <p>In my house we have a heat pump connected to a hot water tank. I connected a Raspberry Pi to the system using a relay to control the
+heat pump, and thermisters to read the temperature. Initially this began as a simple python program to turn on the heating when our internet-connected
+thermostats demanded it, but it soon involved into a more complex program.</p>
+    <p>The program needed heat up water at night (at a cheaper rate), predicting how much hot water would be needed during the day for showers, baths and washing. I rewrote the program in Rust for better reliability as it was critical system. However this meant it had to be cross-compiled onto the Raspberry Pi, which initially proved difficult, but now is easy. To further ensure safety, 
+I added a suite of tests to ensure that the program would behave as expected and not damage the heat pump system. This also involved learning docker in order to properly run a test pipeline on Github, ensuring that all the tests pass and cross-compiling for the Raspberry Pi automatically.</p>
+    <p>All temperatures are stored in database after sampling so that they can be reviewed along with the actions taken by the program. After my Work Experience at Lisi Aerospace, where they showed me Grafana, I implemented in order to display the state of the heating</p>
+   <img src="images/heating_grafana.png" class="project-image"/>
+  </div>
+  <h2 id="craftbook-extra">CraftBook Extra - <a href="https://gitlab.com/minecraftonline/craftbook-extra">Gitlab</a></h2>
+  <div class="project-detail">
+    <p>Craftbook extra is a Minecraft plugin developed for the <a href="https://minecraftonline.com">MinecraftOnline</a> server.</p>
+  </div>
+</body>
+</html>

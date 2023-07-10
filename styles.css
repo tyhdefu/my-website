@@ -1,0 +1,82 @@
+ul.portfolio-list > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul.portfolio-list > li:not(:last-child) {
+    margin-right: 5%;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    color: white;
+    background-color: #2d2d2d;
+}
+
+.gitlab-logo {
+    height: 96px;
+    width: auto;
+}
+
+.item-detail {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.grid {
+    columns: 3;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+ul.grid > li {
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* unvisited link */
+a:link {
+    color: lightblue;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+.project-detail {
+    display: block;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.project-image {
+    width: 100%
+}
