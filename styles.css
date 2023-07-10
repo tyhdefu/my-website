@@ -80,3 +80,16 @@ a:active {
 .project-image {
     width: 100%
 }
+
+.bridge-gallery {
+    display: flex;
+}
+
+.bridge-before-image {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.bridge-after-image {
+    width: 50%;
+}
